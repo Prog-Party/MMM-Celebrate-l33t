@@ -1,9 +1,10 @@
-# MMM-GoogleSheets
+# MMM-Celebrate-l33t
 A MagicMirror² (https://magicmirror.builders) module to celebrate l33t. 
-What is l33t you may ask.... well, if you need to ask that, than you are not worthy of the celebration of l33t!
+
+wh@ 15 l33T j00 M4Y 45k.... W3Ll, 1F J00 n33D T0 45K tH@, th4n y0u 4r3 N0t w0RtHY 0F T3H c3l38R4T10n 0f l33t!
 
 ## Screenshots
-[Screenshot](img/readme/celebrate-with-cats.gif)
+![Screenshot](img/readme/celebrate-with-cats.gif)
 
 ## Installation
 1. Navigate into your MagicMirror's `~MagicMirror/modules` folder
@@ -12,7 +13,8 @@ What is l33t you may ask.... well, if you need to ask that, than you are not wor
 1. Install with `npm install`
 
 ## Configuration
-Add this to your modules array in the configuration file `config/config.js`:
+Add this to your modules array in the configuration file `config/config.js`.
+Position
 
 ```
 {
@@ -67,6 +69,5 @@ Add this to your modules array in the configuration file `config/config.js`:
 
 | Option               | Description
 |--------------------- |-----------
-| `celebrateAlways`    | Do you want to celebrate every minute? <br>**Type:** `boolean`
+| `celebrateAlways`    | Do you want to celebrate every minute? `true` if that's what you like, `false` if you want to celebrate l33t only. <br>**Type:** `boolean`
 | `partyOptions`  	   | There are multiple ways to celebrate, currently there is only one option available, which is the `BouncyImages`. More to come. <br>**Type:** [progparty.partyoption]
-`[]`
