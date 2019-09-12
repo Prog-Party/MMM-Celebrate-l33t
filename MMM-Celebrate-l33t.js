@@ -125,6 +125,7 @@ Module.register("MMM-Celebrate-l33t" ,{
 				self.animation.destroy();
 			}
 			self.isCelebrating = false;
+			self.wrapper.html("");	
 		}, 60 * 1000);
 	},
 	
