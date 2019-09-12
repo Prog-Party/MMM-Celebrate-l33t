@@ -12,12 +12,39 @@ Module.register("MMM-Celebrate-l33t" ,{
 
 	// Define module defaults
 	defaults: {
-		celebrateAlways: true,
+		celebrateAlways: false,
 		partyOptions: [
 			{
-				id: "BouncyImages",
-				urls: [ "https://avatars0.githubusercontent.com/u/16469304?s=200&v=4" ]
-			}	
+				//progparty
+				category: "BouncyImages",
+				urls: [ 
+					"https://avatars0.githubusercontent.com/u/16469304?s=200&v=4",
+					"https://raw.githubusercontent.com/Prog-Party/MMM-Celebrate-l33t/master/img/progparty/progparty1.jpg",
+					"https://raw.githubusercontent.com/Prog-Party/MMM-Celebrate-l33t/master/img/progparty/progparty2.jpg",
+					"https://raw.githubusercontent.com/Prog-Party/MMM-Celebrate-l33t/master/img/progparty/progparty3.jpg",
+					"https://raw.githubusercontent.com/Prog-Party/MMM-Celebrate-l33t/master/img/progparty/progparty4.jpg",
+					"https://raw.githubusercontent.com/Prog-Party/MMM-Celebrate-l33t/master/img/progparty/progparty5.jpg",
+					"https://raw.githubusercontent.com/Prog-Party/MMM-Celebrate-l33t/master/img/progparty/progparty6.jpg",
+					"https://raw.githubusercontent.com/Prog-Party/MMM-Celebrate-l33t/master/img/progparty/progparty7.jpg",
+					"https://raw.githubusercontent.com/Prog-Party/MMM-Celebrate-l33t/master/img/progparty/progparty8.jpg"
+				]
+			},
+			{
+				//cats
+				category: "BouncyImages",
+				urls: [
+					"https://raw.githubusercontent.com/Prog-Party/MMM-Celebrate-l33t/master/img/cats/cat1.jpg",
+					"https://raw.githubusercontent.com/Prog-Party/MMM-Celebrate-l33t/master/img/cats/cat2.jpg",
+					"https://raw.githubusercontent.com/Prog-Party/MMM-Celebrate-l33t/master/img/cats/cat3.jpg",
+					"https://raw.githubusercontent.com/Prog-Party/MMM-Celebrate-l33t/master/img/cats/cat4.jpg",
+					"https://raw.githubusercontent.com/Prog-Party/MMM-Celebrate-l33t/master/img/cats/cat5.jpg",
+					"https://raw.githubusercontent.com/Prog-Party/MMM-Celebrate-l33t/master/img/cats/cat6.jpg",
+					"https://raw.githubusercontent.com/Prog-Party/MMM-Celebrate-l33t/master/img/cats/cat7.jpg",
+					"https://raw.githubusercontent.com/Prog-Party/MMM-Celebrate-l33t/master/img/cats/cat8.jpg",
+					"https://raw.githubusercontent.com/Prog-Party/MMM-Celebrate-l33t/master/img/cats/cat9.jpg",
+					"https://raw.githubusercontent.com/Prog-Party/MMM-Celebrate-l33t/master/img/cats/cat10.jpg"
+				]
+			}
 		]
 	},
 
@@ -64,7 +91,7 @@ Module.register("MMM-Celebrate-l33t" ,{
 				} else {
 					var partyOptionIndex = self.getRandomInt(0, totalPartyOptions-1);
 					var partyOption = self.config.partyOptions[partyOptionIndex];
-					if(partyOption.id == "BouncyImages") {
+					if(partyOption.category == "BouncyImages") {
 						animationController	= new AnimateBouncingImages(self, self.wrapper, partyOption.urls);
 					}
 				}

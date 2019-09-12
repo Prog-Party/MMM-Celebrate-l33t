@@ -27,14 +27,15 @@ class SingleBouncingImage
 		this.stepX = this.getRandomInt(5, 50) / 10; 
 		//speed between 0,5 and 5
 		this.stepY = this.getRandomInt(5, 50) / 10;
-		//resizing speed between 0,5 and 2
-		this.stepSize = this.getRandomInt(5, 20) / 10; 
+		//resizing speed between 0,5 and 3
+		this.stepSize = this.getRandomInt(5, 30) / 10; 
 		
-		//max width size of 150 
-		this.max_size = 150;
+		//max width size of 300 
+		this.max_size = 300;
 		
 		var self = this;
 		this.anim_img = new Image(this.size_x, this.size_y);
+		this.anim_img.setAttribute('crossorigin', 'anonymous');
 		this.anim_img.src = this.url;
 		this.anim_img.onload = function() { 
 			self.draw();
