@@ -9,11 +9,11 @@ Wh@ 15 l33T j00 M4Y 45k.... W3Ll, 1F J00 n33D T0 45K tH@, th4n y0u 4r3 N0t w0RtH
 ## Installation
 1. Navigate into your MagicMirror's `~MagicMirror/modules` folder
 1. Execute `git clone https://github.com/Prog-Party/MMM-Celebrate-l33t.git`
-1. A new folder `MMM-Celebrate-l33t` will appear, navigate into it by `cd MMM-Celebrate-l33t`.
+1. A new folder `MMM-Celebrate-l33t` will appear, navigate into it by `cd MMM-Celebrate-l33t`
 1. Install with `npm install`
 
 ## Configuration
-Add this to your modules array in the configuration file `config/config.js`.
+Add this to your modules array in the configuration file `config/config.js`
 Position
 
 ```
