@@ -39,8 +39,8 @@ class AnimateBouncingImages {
 	
 	destroy() {
 		Log.info("Destroying: Animate Bouncing Images");
-		this.bouncingImages.forEach(function(item, index) { item.destroy(); });
 		clearInterval(this.interval);
+		this.bouncingImages.forEach(function(item, index) { item.destroy(); });
 	}
 	
 	getRandomInt(min, max) {

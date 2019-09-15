@@ -57,7 +57,7 @@ Module.register("MMM-Celebrate-l33t" ,{
 	},
 	getScripts: function() {
 		return [ 
-			this.file("js/jquery-3.4.1.min.js"), 
+			"https://code.jquery.com/jquery-3.4.1.min.js", 
 			this.file("js/animation-particles-galaxy.js"),
 			this.file("js/single-bouncing-image.js"),
 			this.file("js/animation-bouncing-images.js")
@@ -105,27 +105,25 @@ Module.register("MMM-Celebrate-l33t" ,{
 
 	// Override dom generator.
 	getDom: function() {
-		
-		//var height = $("body").outerHeight(true);
-		//$(this.wrapper).height(`${height}px;`);
 		return this.wrapper;
 	},
 	
 	startAnimation: function(animationController) {
-		if(animationController)
-		{
+		if(animationController) {
 			this.animation = animationController;
 			this.animation.animate();
 		}
 		
+		//Stop the animation after 60 seconds
 		var self = this;
 		setTimeout(function() {
-			if(animationController)
-			{
+			Log.info("The animation should stop!");
+			if(animationController) {
 				self.animation.destroy();
 			}
 			self.isCelebrating = false;
-			self.wrapper.html("");	
+			$(self.wrapper).html("");	
+			self.updateDom();
 		}, 60 * 1000);
 	},
 	
