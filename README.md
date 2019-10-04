@@ -14,7 +14,7 @@ Wh@ 15 l33T j00 M4Y 45k.... W3Ll, 1F J00 n33D T0 45K tH@, th4n y0u 4r3 N0t w0RtH
 
 ## Configuration
 Add this to your modules array in the configuration file `config/config.js`
-Position
+Position 'fullscreen' is very important for this module to work purrrfectly.
 
 ```
 {
